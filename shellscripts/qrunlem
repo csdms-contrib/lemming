@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# qrunlem - a BASH script to invoke a LEMming model run and submit it to the torque queue
+# remember to chmod u+rx scriptname if you want it directly executable
+
+qsub -l nodes=1:ppn=1,walltime=240:0:0 -N LEMming_BookCliffs ./runlem
+
+# end of qrunlem
