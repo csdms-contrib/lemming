@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# runlem - a BASH script to invoke a LEMming model run and 
+# remember to chmod u+rx scriptname if you want it directly executable
+
+cd ~/CliffModel
+matlab -nodesktop -nosplash -r LEMming_Input_Cliff
+
+# end of runlem
